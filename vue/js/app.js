@@ -100,8 +100,9 @@
 				todo.title = this.beforeEditCache;
 			},
 
-			removeCompleted: function () {
-				this.todos = filters.active(this.todos);
+			setNewTodos: function(newTodos) {
+				console.log('setting new todos on the parent');
+				this.todos = newTodos;
 			}
 		},
 
