@@ -5,6 +5,7 @@
 		<title>Vue.js • TodoMVC</title>
 		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+		<link rel="stylesheet" href="lion-style.css">
 		<link rel="icon" type="image/x-icon" href="favicon.png">
 		<style> [v-cloak] { display: none; } </style>
 	</head>
@@ -22,7 +23,7 @@
 						<div class="view">
 							<input class="toggle" type="checkbox" v-model="todo.completed">
 							<label @dblclick="editTodo(todo)">{{todo.title}}</label>
-							<button class="destroy" @click="removeTodo(todo)"></button>
+							<lion-deletetask v-bind:todos="todos" v-bind:todo="todo"></lion-deletetask>
 						</div>
 						<input class="edit" type="text" v-model="todo.title" v-todo-focus="todo == editedTodo" @blur="doneEdit(todo)" @keyup.enter="doneEdit(todo)" @keyup.esc="cancelEdit(todo)">
 					</li>
@@ -51,6 +52,7 @@
 		<script src="node_modules/director/build/director.js"></script>
 		<script src="node_modules/vue/dist/vue.js"></script>
 		<script src="js/store.js"></script>
+		<script src="js/components.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/routes.js"></script>
 	</body>

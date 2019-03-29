@@ -79,11 +79,6 @@
 				this.newTodo = '';
 			},
 
-			removeTodo: function (todo) {
-				var index = this.todos.indexOf(todo);
-				this.todos.splice(index, 1);
-			},
-
 			editTodo: function (todo) {
 				this.beforeEditCache = todo.title;
 				this.editedTodo = todo;
