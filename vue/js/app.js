@@ -91,7 +91,7 @@
 				this.editedTodo = null;
 				todo.title = todo.title.trim();
 				if (!todo.title) {
-					this.removeTodo(todo);
+					this.$emit('deleteTask', todo);
 				}
 			},
 
