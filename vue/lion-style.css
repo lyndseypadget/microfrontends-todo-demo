@@ -1,3 +1,10 @@
 .lion {
   background-color:#41b883;
 }
+
+.nice-font {
+  line-height: 32px;
+  font-size: 32px;
+  color: black;
+  weight: 700;
+}

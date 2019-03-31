@@ -26,3 +26,7 @@ Vue.component('lion-clearcompleted', {
   },
   template: '<button class="clear-completed lion" @click="removeCompleted()">Clear completed</button>'
 })
+
+Vue.component('lion-helloworld', {
+  template: '<div class="lion nice-font">Hello world</div>'
+})
