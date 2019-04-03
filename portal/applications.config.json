@@ -1,0 +1,8 @@
+[
+    {
+        "name": "scarecrow",
+        "selector": "scarecrow-root",
+        "baseHref": "/scarecrow",
+        "matchRoute": "/"
+    }
+]
